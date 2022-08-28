@@ -11,8 +11,10 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {NgDynamicBreadcrumbModule} from 'ng-dynamic-breadcrumb';
 import { BaseService } from './services/base.service';
+
 import { PostDetailComponent } from './components/post-detail/post-detail.component';
 import { HeaderComponent } from './components/header/header.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HeaderComponent } from './components/header/header.component';
     HomeComponent,
     CategoryComponent,
     PostDetailComponent,
-    HeaderComponent
+    HeaderComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -30,6 +34,7 @@ import { HeaderComponent } from './components/header/header.component';
     HttpClientModule,
     FormsModule,
     NgDynamicBreadcrumbModule,
+
   ],
   providers: [BaseService],
   bootstrap: [AppComponent]

@@ -12,13 +12,15 @@ import {FormsModule} from '@angular/forms';
 import {NgDynamicBreadcrumbModule} from 'ng-dynamic-breadcrumb';
 import { BaseService } from './services/base.service';
 import { PostDetailComponent } from './components/post-detail/post-detail.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CategoryComponent,
-    PostDetailComponent
+    PostDetailComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

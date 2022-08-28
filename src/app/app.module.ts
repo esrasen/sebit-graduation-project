@@ -14,6 +14,7 @@ import { BaseService } from './services/base.service';
 
 import { PostDetailComponent } from './components/post-detail/post-detail.component';
 import { HeaderComponent } from './components/header/header.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { HeaderComponent } from './components/header/header.component';
     CategoryComponent,
     PostDetailComponent,
     HeaderComponent,
+    SearchComponent,
 
 
   ],

@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CategoryService } from 'src/app/services/category.service';
 import { PostService } from 'src/app/services/post.service';
+import {NgDynamicBreadcrumbService} from 'ng-dynamic-breadcrumb';
 
 @Component({
   selector: 'app-category',
@@ -14,6 +15,7 @@ export class CategoryComponent implements OnInit {
   categoryObj:any;
   postData:any;
   totalPost:any;
+  breadcrumb:any;
 
   @Input() max: number = 280;
 
@@ -22,7 +24,8 @@ export class CategoryComponent implements OnInit {
   constructor(
     private categoryService: CategoryService,
     private postService:PostService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private ngDynamicBreadcrumbService:NgDynamicBreadcrumbService,
   ) { }
 
   ngOnInit(): void {
@@ -30,6 +33,8 @@ export class CategoryComponent implements OnInit {
 
     this.categoryService.getCategory(this.categoryId).subscribe((res)=>{
       this.categoryObj = res;
+      this.breadcrumb = {customCategory: res.name};
+      this.ngDynamicBreadcrumbService.updateBreadcrumbLabels(this.breadcrumb);
     })
 
     this.postService.getPosts().subscribe((res)=>{

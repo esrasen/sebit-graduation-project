@@ -7,10 +7,18 @@ import { SearchComponent } from './components/search/search.component';
 
 const routes: Routes = [
   {path:'', pathMatch: 'full', redirectTo: 'home'},
-  {path:'home', component: HomeComponent},
-  {path:'home/category/:categoryId', component:CategoryComponent},
-  {path:'post/:postId', component:PostDetailComponent},
-  {path:'search/:searchTerm',component:SearchComponent},
+  {path:'home', component: HomeComponent, data:{
+    breadcrumb:[{label:'Home Page', url:'/home'}]
+  }},
+  {path:'home/category/:categoryId', component:CategoryComponent, data:{
+    breadcrumb:[{label:'Home Page', url:'/home'},{label:'{{customCategory}}', url:'home/category/:categoryId'}]
+  }},
+  {path:'post/:postId', component:PostDetailComponent, data:{
+    breadcrumb:[{label:'Home Page', url:'/home'}]
+  }},
+  {path:'search/:searchTerm',component:SearchComponent, data:{
+    breadcrumb:[{label:'Home Page', url:'/home'}]
+  }}
 
 ];
 

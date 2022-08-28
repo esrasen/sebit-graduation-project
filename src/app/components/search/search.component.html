@@ -2,7 +2,7 @@
   <app-ng-dynamic-breadcrumb [bgColor]="'#faf9fc'"></app-ng-dynamic-breadcrumb>
 
 <div *ngIf="postData!=null">
-<h2>Filtered posts by: get</h2>
+<h2>Filtered posts by: {{searchTerm}}</h2>
   <div class="row" *ngFor="let post of postData">
       <div class="post-box">
           <br>

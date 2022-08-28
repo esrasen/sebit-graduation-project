@@ -11,7 +11,7 @@ import { PostService } from 'src/app/services/post.service';
 export class SearchComponent implements OnInit {
 
   postData: Post[] = [];
-
+  searchTerm: string = "";
   @Input() max: number = 280;
 
   readMore: boolean = false;
@@ -28,12 +28,14 @@ export class SearchComponent implements OnInit {
             post.description.toLowerCase().includes(params.searchTerm.toLowerCase()) |
             post.title.toLowerCase().includes(params.searchTerm.toLowerCase())
           )
+          
         }
         else {
           this.postService.getPosts().subscribe((res) => {
             this.postData = res;
           })
         }
+        this.searchTerm = params.searchTerm;
       })
     })
   }

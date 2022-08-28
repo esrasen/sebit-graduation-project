@@ -1,1 +1,29 @@
-<p>search works!</p>
+<div class="container">
+  <app-ng-dynamic-breadcrumb [bgColor]="'#faf9fc'"></app-ng-dynamic-breadcrumb>
+
+<div *ngIf="postData!=null">
+<h2>Filtered posts by: get</h2>
+  <div class="row" *ngFor="let post of postData">
+      <div class="post-box">
+          <br>
+          <h3 [routerLink]="'/post/' + post.id">{{post.title}}</h3>
+          <p>{{readMore ? post.description : post.description.substr(0, max)}}
+              <ng-container *ngIf="post.description.length > max">
+                  ...<span class="read-more-text" [routerLink]="'/post/' + post.id">read {{readMore ? "less": "more"}}</span>
+              </ng-container>
+          </p>
+
+          <div class="footer">
+              <img src="assets/images/profile.png" alt="">
+              <div class="footer-content">
+                  <h4>Written by <span>{{post.author}}</span></h4>
+                  <span>{{post.date | date: 'MMM d y'}}</span>
+              </div>
+          </div>
+
+          <br>
+      </div>
+  </div>
+
+</div>
+</div>

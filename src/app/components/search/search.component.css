@@ -1,0 +1,41 @@
+
+.post-box{
+  background-color: #fff;
+  border-radius: 0.2em;
+  margin-bottom: 1em;
+}
+
+.post-box h3{
+color:#583ABC;
+}
+
+.post-box .footer{
+ margin-top: 2em;
+ display: flex;
+ align-items: center;
+}
+
+.post-box .footer img{
+width: 30px;
+height: 30px;
+border-radius: 50%;
+}
+
+.post-box .footer .footer-content{
+ margin-left: 2em;
+}
+
+.post-box .footer .footer-content h4{
+  margin: 0 !important;
+}
+
+.post-box .footer .footer-content h4 span{
+  font-weight: bold;
+}
+
+.read-more-text{
+  background-color: #846fdf;
+  color: #fff;
+  padding: 0 0.2em;
+  cursor: default;
+}

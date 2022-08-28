@@ -139,23 +139,6 @@ http://localhost:4200
 Aşağıda tüm endpointler verilmiştir.
 </p>
 
-<style>
-	.demo {
-		border:1px solid #C0C0C0;
-		border-collapse:collapse;
-		padding:5px;
-	}
-	.demo th {
-		border:1px solid #C0C0C0;
-		padding:5px;
-		background:#F0F0F0;
-        color: black;
-	}
-	.demo td {
-		border:1px solid #C0C0C0;
-		padding:5px;
-	}
-</style>
 
 <h4>a) Ana Sayfa</h4>
 <table class="demo">

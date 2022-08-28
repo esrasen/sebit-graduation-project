@@ -243,7 +243,7 @@ Aşağıda tüm endpointler verilmiştir.
 
 4.Arama (where)
 <p align="center">
-  <img src="docs/images/4.png" alt="" width="75%" height="75%">
+  <img src="docs/images/9.png" alt="" width="75%" height="75%">
 </p><br/>
 
 
@@ -265,9 +265,9 @@ Aşağıda tüm endpointler verilmiştir.
   <img src="docs/images/7.png" alt="" width="75%" height="75%">
 </p><br/>
 
-4.Arama (its)
+4.Arama (where)
 <p align="center">
-  <img src="docs/images/8.png" alt="" width="75%" height="75%">
+  <img src="docs/images/10.png" alt="" width="75%" height="75%">
 </p><br/>
 
 

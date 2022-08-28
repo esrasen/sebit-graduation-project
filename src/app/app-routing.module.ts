@@ -11,7 +11,7 @@ const routes: Routes = [
     breadcrumb:[{label:'Home Page', url:'/home'}]
   }},
   {path:'home/category/:categoryId', component:CategoryComponent, data:{
-    breadcrumb:[{label:'Home Page', url:'/home'},{label:'{{customCategory}}', url:'home/category/:categoryId'}]
+    breadcrumb:[{label:'Home Page', url:'/home'},{label:'{{customCategory}}', url:'/home/category/:categoryId'}]
   }},
   {path:'post/:postId', component:PostDetailComponent, data:{
     breadcrumb:[{label:'Home Page', url:'/home'}]

@@ -7,7 +7,7 @@
     <img src="assets/icons/{{category.icon}}">
     <div class="content-box">
       <mat-card-header>
-        <mat-card-title>{{category.name}}</mat-card-title>
+        <mat-card-title [routerLink]="'category/' + category.id">{{category.name}}</mat-card-title>
       </mat-card-header>
       <p>{{category.description}}</p>
     </div>

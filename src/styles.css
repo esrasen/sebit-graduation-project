@@ -1,11 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
-html, body { height: 100%; }
+html, body { height: 100%;
+background-color: #faf9fc;
+}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+
+
+::-webkit-input-placeholder{
+  color:white !important;
+}
+
+::-moz-placeholder{
+  color:white !important;
+}
+::-ms-placeholder{
+  color:white !important;
+}
+::placeholder{
+  color:white !important;
+}
+
+.body-wrapper{
+  background-color: #523cb7;
+}
+
+.banner-area{
+  height: 350px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.banner-search-form{
+  position: relative;
+}
+
+
+.banner-search-form .img-search{
+  position: absolute;
+  top:16px;
+  left: 20px;
+
+}
+
+.banner-search-form input{
+  height: 55px;
+  text-indent: 3em;
+  border-radius: 10px;
+  background-color: #7261c5;
+}
+
+.banner-search-form input:focus{
+  box-shadow: none;
+  border: none;
+  background-color: #7261c5;
+  color: #fff !important
+}
 
 .mat-card-header-text{
   margin: 0 !important;
   color: #523cb7 !important;
+}
+
+.form-control {
+  color:#fff !important;
 }

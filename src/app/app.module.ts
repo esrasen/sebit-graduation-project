@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
 import { CategoryComponent } from './components/category/category.component';
+import {MatCardModule} from '@angular/material/card';
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
+import {NgDynamicBreadcrumbModule} from 'ng-dynamic-breadcrumb';
+import { BaseService } from './services/base.service';
 
 @NgModule({
   declarations: [
@@ -16,9 +21,13 @@ import { CategoryComponent } from './components/category/category.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
+    HttpClientModule,
+    FormsModule,
+    NgDynamicBreadcrumbModule,
   ],
-  providers: [],
+  providers: [BaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

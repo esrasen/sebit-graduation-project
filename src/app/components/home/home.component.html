@@ -1,1 +1,19 @@
-<p>home works!</p>
+<div class="container">
+<div class="row">
+
+  <div class="col-lg-6 mt-5" *ngFor="let category of categoryData">
+<mat-card>
+  <mat-card-content>
+    <img src="assets/icons/{{category.icon}}">
+    <div class="content-box">
+      <mat-card-header>
+        <mat-card-title>{{category.name}}</mat-card-title>
+      </mat-card-header>
+      <p>{{category.description}}</p>
+    </div>
+  </mat-card-content>
+</mat-card>
+  </div>
+
+</div>
+</div>

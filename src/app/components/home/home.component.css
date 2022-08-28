@@ -1,0 +1,15 @@
+
+mat-card-content {
+  display: flex !important;
+  margin-top: 3em !important;
+  margin-bottom: 3em !important;
+}
+
+mat-card-content .content-box {
+  margin-left: 2em;
+}
+
+mat-card-content img {
+  margin-left: 2em;
+}
+

@@ -1,1 +1,23 @@
-<p>post-detail works!</p>
+<div class="container">
+  <div class="row" *ngIf="postObj != null">
+
+    <div class="post-box">
+      <br>
+      <h2>{{postObj.title}}</h2>
+      <p>{{postObj.description}}</p>
+
+      <div class="footer">
+        <br>
+        <div class="footer-content">
+          <div class="author"><span>{{postObj.author}}</span></div>
+          <div class="date"><span>{{postObj.date | date: 'd MMMM y'}}</span></div>
+
+        </div>
+        <br>
+        <div class="tags">Tags: <span>foo</span><span>bar</span><span>baz</span></div>
+      </div>
+      <br>
+
+    </div>
+  </div>
+</div>

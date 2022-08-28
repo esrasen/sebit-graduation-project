@@ -1,0 +1,27 @@
+.post-box h2 {
+  color: black;
+}
+
+.post-box .footer .footer-content {
+  display: flex;
+}
+
+.post-box .footer .footer-content .author span{
+ background-color: #846fdf;
+ color: white;
+ padding: 0.3em 0.2em;
+ cursor: default;
+}
+
+.post-box .footer .footer-content .date span{
+  color: #583ABC;
+  background-color: #EEEEEE;
+  padding: 0.3em 0.5em;
+}
+
+.post-box .footer .tags span{
+  background-color: #EEEEEE;
+ margin-right: 0.3em;
+ padding: 0.2em 0.5em;
+ border-radius: 0.2em;
+}

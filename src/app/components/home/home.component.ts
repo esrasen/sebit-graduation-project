@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Category } from 'models/api-models/category.model';
 import { CategoryService } from 'src/app/services/category.service';
 
 @Component({
@@ -8,13 +9,13 @@ import { CategoryService } from 'src/app/services/category.service';
 })
 export class HomeComponent implements OnInit {
 
-  categoryData:any;
+  categoryData: Category[] = [];
   constructor(
-    private categoryService:CategoryService
+    private categoryService: CategoryService
   ) { }
 
   ngOnInit(): void {
-    this.categoryService.getCategories().subscribe((res)=>{
+    this.categoryService.getCategories().subscribe((res) => {
       this.categoryData = res;
     })
   }

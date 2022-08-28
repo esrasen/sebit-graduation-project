@@ -8,21 +8,21 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  searchTerm: String ="";
+  searchTerm: String = "";
   constructor(
     private route: ActivatedRoute,
     private router: Router
   ) { }
 
   ngOnInit(): void {
-    this.route.params.subscribe((params:any)=>{
-      if(params.searchTerm)
-      this.searchTerm = params.searchTerm;
+    this.route.params.subscribe((params: any) => {
+      if (params.searchTerm)
+        this.searchTerm = params.searchTerm;
     })
   }
 
-  search():void{
-    if(this.searchTerm)
-    this.router.navigateByUrl('/search/'+ this.searchTerm)
+  search(): void {
+    if (this.searchTerm)
+      this.router.navigateByUrl('/search/' + this.searchTerm)
   }
 }

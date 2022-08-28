@@ -1,23 +1,25 @@
 import { Injectable } from '@angular/core';
+import { Category } from 'models/api-models/category.model';
+import { Observable } from 'rxjs';
 import { BaseService } from './base.service';
 
 @Injectable({
-    providedIn: 'root'
+  providedIn: 'root'
 })
 export class CategoryService extends BaseService {
 
-    constructor(
-        private base: BaseService
-    ) {
-        super(base.http);
+  constructor(
+    private base: BaseService
+  ) {
+    super(base.http);
 
-    }
+  }
 
-    public getCategories(){
-        return this.base.getReq('/categories');
-    }
+  public getCategories(): Observable<Category[]> {
+    return this.base.getReq('/categories');
+  }
 
-    public getCategory(categoryId: any){
-        return this.base.getReq('/categories/' + categoryId)
-    }
+  public getCategory(categoryId: number): Observable<Category> {
+    return this.base.getReq('/categories/' + categoryId)
+  }
 }

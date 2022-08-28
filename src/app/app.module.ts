@@ -11,12 +11,14 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {NgDynamicBreadcrumbModule} from 'ng-dynamic-breadcrumb';
 import { BaseService } from './services/base.service';
+import { PostDetailComponent } from './components/post-detail/post-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CategoryComponent
+    CategoryComponent,
+    PostDetailComponent
   ],
   imports: [
     BrowserModule,
